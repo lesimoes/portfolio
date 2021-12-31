@@ -9,7 +9,7 @@ export default function Projects() {
       <Content>
         <div>
             <h3><strong>Firma</strong></h3>
-            <p>I've been working on new open source project called Firma, it's a tool for engage employees help each others and help charity institutions. Feel free to join in this trip with me.</p>
+            <p>I have been working on new open source project called Firma, it is a tool for engage employees help each others and help charity institutions. Feel free to join in this trip with me.</p>
             <br />
             <p><em>Node</em> <em>Typescript</em> <em>React</em> <em>Mongo</em></p>
         </div>
@@ -21,7 +21,7 @@ export default function Projects() {
         </div>
         <div>
             <h3><strong>Shaolim - The Bot</strong></h3>
-            <p>Or maybe you are a professor and look for a way to engage your students. Yeah, I know! Some times it's a tough task, right? Maybe you could get some ideas from my project Shaolim, its a discord bot that help students find recorded classes (or other learning resources).</p>
+            <p>Or maybe you are a professor and look for a way to engage your students. Yeah, I know! Some times it is a tough task, right? Maybe you could get some ideas from my project Shaolim, its a discord bot that help students find recorded classes (or other learning resources).</p>
             <br />
             <p><em>Node</em> <em>Firebase</em> <em>API AI</em></p>
         </div>

@@ -31,13 +31,14 @@ export default function Principal() {
               'https://www.linkedin.com/in/leandro-sim%C3%B5es-msc-98993428/'
             }
             target="_blank"
+            rel="noreferrer"
           >
             <Button>linkedin</Button>
           </a>
-          <a href={'https://github.com/lesimoes'} target="_blank">
+          <a href={'https://github.com/lesimoes'} target="_blank" rel="noreferrer">
             <Button>github</Button>
           </a>
-          <a href={"mailto:lesimoes0@gmail.com"} target="_blank">
+          <a href={"mailto:lesimoes0@gmail.com"} target="_blank" rel="noreferrer">
             <Button>email</Button>
           </a>
         </div>
