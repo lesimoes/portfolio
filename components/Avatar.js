@@ -5,7 +5,7 @@ export default function Avatar({ image }) {
 
     return (
         <ProfileAvatar>
-            <img src={image} />
+            <img src={'./lesimoes.jpg'} />
         </ProfileAvatar>
     )
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Button from '../styles/Button';
 import lesimoes from '../public/lesimoes.jpg';
-import Avatar from '../styles/Avatar';
+import Avatar from './Avatar';
 
 export default function Principal() {
   return (
