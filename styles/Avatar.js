@@ -1,12 +1,11 @@
 import React from 'react';
 import styled from "styled-components";
-import Image from 'next/image'
 
 export default function Avatar({ image }) {
 
     return (
         <ProfileAvatar>
-            <Image src={image} />
+            <img src={image} />
         </ProfileAvatar>
     )
 }
