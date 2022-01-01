@@ -72,6 +72,7 @@ const Title = styled.div`
 
 const Description = styled.div`
   display: flex;
+  width: 60%;
   flex-direction: row;
-  align-items: flex-end;
+  justify-content: flex-start;
 `;

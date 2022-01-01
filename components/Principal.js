@@ -62,7 +62,7 @@ const Container = styled.div`
 
   @media screen and (max-width: 500px) {
     margin: 8px;
-    width: 100vw;
+    width: 94vw;
   }
 `;
 const ContainerAvatar = styled.div`
@@ -91,7 +91,7 @@ const ContainerAbout = styled.div`
   }
 
   @media screen and (max-width: 500px) {
-    width: 100vw;
+    width: 90vw;
     justify-content: center;
     align-items: center;
 
