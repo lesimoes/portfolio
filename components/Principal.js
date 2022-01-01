@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Button from '../styles/Button';
 import lesimoes from '../public/lesimoes.jpg';
-import Avatar from './Avatar';
+import Avatar from '../styles/Avatar';
 
 export default function Principal() {
   return (
@@ -56,9 +56,13 @@ const Container = styled.div`
   @media screen and (max-width: 800px) {
     display: flex;
     flex-direction: column;
-    width: 90%;
     justify-content: center;
     align-items: center;
+  }
+
+  @media screen and (max-width: 500px) {
+    margin: 8px;
+    width: 100vw;
   }
 `;
 const ContainerAvatar = styled.div`
@@ -69,6 +73,7 @@ const ContainerAvatar = styled.div`
   @media screen and (max-width: 800px) {
     width: 22vw;
   }
+
 `;
 
 const ContainerAbout = styled.div`
@@ -83,5 +88,16 @@ const ContainerAbout = styled.div`
 
   @media screen and (max-width: 800px) {
     width: 60vw;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+
+    div {
+      width: 80%;
+      justify-content: space-between;
+    }
   }
 `;

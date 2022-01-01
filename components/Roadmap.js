@@ -41,6 +41,11 @@ const Container = styled.div`
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   }
 
+  @media screen and (max-width: 500px) {
+    margin: 12px;
+    width: 90vw;
+  }
+
 `;
 
 const Action = styled.div`
