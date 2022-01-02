@@ -7,47 +7,53 @@ export default function Projects() {
       <h1>Projects</h1>
       <Content>
         <div>
-          <h3>
-            <strong>Firma</strong>
-          </h3>
-          <p>
-            I have been working on new open source project called Firma, it is a
-            tool for engage employees help each others and help charity
-            institutions. Feel free to join in this trip with me.
-          </p>
-          <br />
-          <p>
-            <em>Node</em> <em>Typescript</em> <em>React</em> <em>Mongo</em>
-          </p>
+          <a href="/firma">
+            <h3>
+              <strong>Firma</strong>
+            </h3>
+            <p>
+              I have been working on new open source project called Firma, it is
+              a tool for engage employees help each others and help charity
+              institutions. Feel free to join in this trip with me.
+            </p>
+            <br />
+            <p>
+              <em>Node</em> <em>Typescript</em> <em>React</em> <em>Mongo</em>
+            </p>
+          </a>
         </div>
         <div>
-          <h3>
-            <strong>SQS Huge Message</strong>
-          </h3>
-          <p>
-            If you are having problems with SQS limit message size and working
-            with Node/Typescript, maybe my package could help you.
-          </p>
-          <br />
-          <p>
-            <em>Node</em> <em>Typescript</em>
-          </p>
+          <a href="/">
+            <h3>
+              <strong>SQS Huge Message</strong>
+            </h3>
+            <p>
+              If you are having problems with SQS limit message size and working
+              with Node/Typescript, maybe my package could help you.
+            </p>
+            <br />
+            <p>
+              <em>Node</em> <em>Typescript</em>
+            </p>
+          </a>
         </div>
         <div>
-          <h3>
-            <strong>Shaolim - The Bot</strong>
-          </h3>
-          <p>
-            Or maybe you are a professor and look for a way to engage your
-            students. Yeah, I know! Some times it is a tough task, right? Maybe
-            you could get some ideas from my project Shaolim, its a discord bot
-            that help students find recorded classes (or other learning
-            resources).
-          </p>
-          <br />
-          <p>
-            <em>Node</em> <em>Firebase</em> <em>API AI</em>
-          </p>
+          <a href="/">
+            <h3>
+              <strong>Shaolim - The Bot</strong>
+            </h3>
+            <p>
+              Or maybe you are a professor and look for a way to engage your
+              students. Yeah, I know! Some times it is a tough task, right?
+              Maybe you could get some ideas from my project Shaolim, its a
+              discord bot that help students find recorded classes (or other
+              learning resources).
+            </p>
+            <br />
+            <p>
+              <em>Node</em> <em>Firebase</em> <em>API AI</em>
+            </p>
+          </a>
         </div>
       </Content>
     </Container>
