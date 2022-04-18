@@ -2,17 +2,12 @@ import GlobalStyle from '../styles/globalStyle';
 import Principal from '../components/Principal';
 import Projects from '../components/Projects';
 import About from '../components/About';
-import Papper from '../components/Papper';
 
-export default function Home() {
+export default function Firma() {
   return (
     <>
     <GlobalStyle />
-    <title>lesimoes</title>
-    <Principal></Principal>
-    <Projects></Projects>
-    <About></About>
-    <Papper></Papper>
+    <title>Firma - lesimoes</title>
     </>
         
   )

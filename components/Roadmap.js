@@ -1,11 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export default function Roadmap({ icon, title, description }) {
+export default function Roadmap({ icon, title, description, link }) {
+  
+  function openLink (link) {
+    window.open(link)
+  }
+
   return (
-    <Container>
+    <Container onClick={() => openLink(link)}>
       <Action>
-        <Icon>{icon}</Icon>
+        {icon ? <Icon>{icon}</Icon> : ''}
         <Title>
           <p>{title}</p>
         </Title>

@@ -10,11 +10,10 @@ const Button = styled.div`
     color: #A2C5D0;
     font-weight: bold;
     font-size: 18px;
-    background-color: #282836;
     cursor: pointer;
 
     &:hover {
-        color: #f34dad;
+        color: #81A1C1;
     }
 
     &:active {

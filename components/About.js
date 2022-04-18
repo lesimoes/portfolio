@@ -4,35 +4,41 @@ import Roadmap from './Roadmap';
 
 const aboutData = [
   {
-    icon: '🎓',
-    title: 'Master Degree [2017]',
+    icon: '👨‍🏫',
+    title: 'Consultoria em Desenvolvimento de Software [2021]',
     description:
-      'I finished my Master Degree in Computer Sciente at UFJF and I published scientific papers in national and international conferences in Software Engineering.',
+      'Trabalho como consultor de projetos de sofware como desenvolvedor e arquiteto de software com soluções AWS, Node, Typescritp e React.',
   },
   {
     icon: '👨‍🏫',
-    title: 'Assistant Professor [2018 - 2021]',
+    title: 'Professor [2021]',
     description:
-      'I worked as Assistant Professor at four universities and teached dozens of students.',
+      'Tenho trabalhado como professor em um bootcamp ensinando centenas de alunos iniciando do ZERO até pessoas desenvolvedoras web fullstack.',
   },
   {
     icon: '👷',
-    title: 'Software Developer [2016]',
+    title: 'Software Developer e Tech Lead[2016]',
     description:
-      'I’ve been working in a lot of web projects in Ecommerce (Payments, Catalog, Gift Card Provider), Customer Experience, ChatBots, Built a low code platform, Worked with Cloud Services.',
+      'Trabalhei em diversos projetos de E-Commerce (Pagamentos, Catalogo, Gift Card Provider), Customer Experience, Chatbos e construi uma ferramenta low code.',
   },
   {
     icon: '👨‍🏫',
-    title: 'Bootcamp Professor [2021]',
+    title: 'Professor Assistente [2018 - 2021]',
     description:
-      'I’ve been working as bootcamp professor teaching dozend of students from ZERO to Web Full Stack HERO.',
+      'Trabalhei como professor assistente em quatro universidades, lecionando para dezenas de alunos.',
+  },
+  {
+    icon: '🎓',
+    title: 'Mestrado em Ciência da Computação [2017]',
+    description:
+      'Concluí o mestrado em Ciência da Computação pela UFJF e publiquei artigos em eventos nacionais e internacionais em computação e engenharia de software.',
   },
 ];
 
 export default function About() {
   return (
     <Container>
-      <h1>About ++ </h1>
+      <h1>Sobre ++ </h1>
       {aboutData.map((step, index) => (
         <Roadmap
           key={index}
