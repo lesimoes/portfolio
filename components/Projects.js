@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export default function Projects() {
   return (
     <Container>
-      <h1>Projects</h1>
+      <h1>Projetos</h1>
       <Content>
         <div>
           <a href="/firma">
@@ -12,9 +12,7 @@ export default function Projects() {
               <strong>Firma</strong>
             </h3>
             <p>
-              I have been working on new open source project called Firma, it is
-              a tool for engage employees help each others and help charity
-              institutions. Feel free to join in this trip with me.
+              Tenho trabalhado em um projeto open source chamado Firma. Firma é uma ferramenta para engajar colaboradores e ajudar instituições de caridade. Sinta-se livre para contribuir também.
             </p>
             <br />
             <p>
@@ -28,8 +26,7 @@ export default function Projects() {
               <strong>SQS Huge Message</strong>
             </h3>
             <p>
-              If you are having problems with SQS limit message size and working
-              with Node/Typescript, maybe my package could help you.
+              Se você está com problemas quanto ao limite do tamanho das mensagens enviadas para o AWS SQS então esse pacote pode te ajudar.
             </p>
             <br />
             <p>
@@ -43,11 +40,8 @@ export default function Projects() {
               <strong>Shaolim - The Bot</strong>
             </h3>
             <p>
-              Or maybe you are a professor and look for a way to engage your
-              students. Yeah, I know! Some times it is a tough task, right?
-              Maybe you could get some ideas from my project Shaolim, its a
-              discord bot that help students find recorded classes (or other
-              learning resources).
+              Ou talvez você é professor e está procurando uma maneira de engajar seus alunos. Sim, eu sei! As vezes isso é uma tarefa homérica, certo?
+              Talvez você possar usar algumas ideias do meu projeto Shaolim, é um bot do discord que ajuda os estudantes na busca do conteúdo passado em aula (ou outros recursos de aprendizagem).
             </p>
             <br />
             <p>

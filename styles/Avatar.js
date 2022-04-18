@@ -11,7 +11,7 @@ export default function Avatar({ image }) {
 }
 
 const ProfileAvatar = styled.div`
-    background-color: #f35fad;
+    background-color: #88C0D0;
     border-radius: 50%;
     padding: 2px;
     display: flex;

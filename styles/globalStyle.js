@@ -15,7 +15,7 @@ html {
 
 
     strong {
-        color: #f34dad;
+        color: #D8DEE9;
         font-weight: 800;
     }
 
@@ -35,11 +35,11 @@ html {
         padding: 0;
     }
     body {
-        background-color: #282836;
+        background-color: #4C566A;
     }
 
     h1, h2, h3, h4, h5, h6, p {
-        color: #f7fae6;
+        color: #D8DEE9;
     }
 
     .font-bits {

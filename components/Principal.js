@@ -11,18 +11,17 @@ export default function Principal() {
         <Avatar image={lesimoes}></Avatar>
       </ContainerAvatar>
       <ContainerAbout>
-        <h1>Hello there 👋</h1>
+        <h1>Olá 👋</h1>
         <p>
-          My name is Leandro Simões, but you can call me <strong>Le</strong>.
-          I’m Software Developer from Brazil, Assistant Professor and hold a
-          master’s degree in Computer Science from UFJF.
+          Meu nome é Leandro Simões, mas você pode me chamar de <strong>Le</strong>.
+          Sou programador, professor e tenho mestrado em Ciência da Computação pela UFJF.
         </p>
         <p>
-          I’ve been working with <em>Node</em>, <em>Typescript</em>,{' '}
-          <em>React</em>, <em>AWS</em>, but I have interests in other languages
-          like <strong>Rust</strong> or <strong>Vala</strong> (and someday I
-          would like to contributing with Pop Os or Elementary OS – maybe would
-          be my next project).
+          Tenho trabalhado com <em>Node</em>, <em>Typescript</em>,{' '}
+          <em>React</em>, <em>AWS</em>, como programador, tech lead ou arquiteto de software em projetos de e-commerce, customer experience e atendimento ao cliente.
+        </p>
+        <p>
+          Trabalhei em grandes empresas, start-ups e como freelancer. Publiquei artigos de engenharia de software em eventos nacionais e internacionais.
         </p>
         <br />
         <div>
