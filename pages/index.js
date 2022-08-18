@@ -1,19 +1,12 @@
-import GlobalStyle from '../styles/globalStyle';
-import Principal from '../components/Principal';
-import Projects from '../components/Projects';
-import About from '../components/About';
-import Papper from '../components/Papper';
+import Main from '../components/Main';
+import { ThemesProvider } from '../contexts/ThemeContext';
 
 export default function Home() {
   return (
     <>
-    <GlobalStyle />
-    <title>lesimoes</title>
-    <Principal></Principal>
-    <Projects></Projects>
-    <About></About>
-    <Papper></Papper>
+      <ThemesProvider>
+        <Main />
+      </ThemesProvider>
     </>
-        
-  )
+  );
 }
