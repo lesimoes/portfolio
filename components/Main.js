@@ -21,7 +21,9 @@ export default function Main() {
       <Content>
         <FiGithub onClick={() => handleClick('https://github.com/lesimoes')} />
         <FiYoutube
-          onClick={() => handleClick('https://www.youtube.com/c/lesimoes')}
+          onClick={() =>
+            handleClick('https://www.youtube.com/c/lesimoes?sub_confirmation=1')
+          }
         />
         <FiLinkedin
           onClick={() => handleClick('https://www.linkedin.com/in/lesimoess/')}
