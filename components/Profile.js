@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { useThemes } from '../contexts/ThemeContext';
 
 export default function Profile({ image }) {
   return (
@@ -17,7 +16,7 @@ const ProfileAvatar = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 18px 0 ${(props) => `${props.theme.overlay2.hex}30`};
   width: 160px;
   height: 160px;
 

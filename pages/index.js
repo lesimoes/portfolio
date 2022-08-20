@@ -1,3 +1,4 @@
+import Dev from '../components/Dev';
 import Main from '../components/Main';
 import { ThemesProvider } from '../contexts/ThemeContext';
 

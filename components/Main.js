@@ -17,17 +17,27 @@ export default function Main() {
         <h2>
           Engenheiro de Software, Professor e Mestre em Ciência da Computação
         </h2>
+        <p>
+          Liderando a equipe <strong>devteam</strong> com devs apaixonados por
+          tecnologia. Damos vida a sua ideia com entregas rápidas e tecnologias
+          consolidadas como <strong>nodejs</strong>, <strong>reactjs</strong>,{' '}
+          <strong>aws</strong>, <strong>mongodb</strong>,{' '}
+          <strong>firebase</strong>, <strong>postgresql</strong>.
+        </p>
+        <button onClick={() => handleClick('mailto:lesimoes0@gmail.com')}>
+          Entre em contato
+        </button>
       </Header>
       <Content>
-        <FiGithub onClick={() => handleClick('https://github.com/lesimoes')} />
+        <FiLinkedin
+          onClick={() => handleClick('https://www.linkedin.com/in/lesimoess/')}
+        />
         <FiYoutube
           onClick={() =>
             handleClick('https://www.youtube.com/c/lesimoes?sub_confirmation=1')
           }
         />
-        <FiLinkedin
-          onClick={() => handleClick('https://www.linkedin.com/in/lesimoess/')}
-        />
+        <FiGithub onClick={() => handleClick('https://github.com/lesimoes')} />
         <FiMail onClick={() => handleClick('mailto:lesimoes0@gmail.com')} />
       </Content>
       <Footer>
@@ -61,6 +71,31 @@ const Header = styled.header`
     padding: 0 20px;
     text-align: center;
   }
+
+  p {
+    font-size: 28px;
+    text-align: center;
+    padding: 2% 10%;
+  }
+
+  strong {
+    color: ${(props) => props.theme.pink.hex};
+  }
+
+  button {
+    width: 200px;
+    height: 42px;
+    font-size: 18px;
+    font-weight: bold;
+    color: ${(props) => props.theme.subtext1.hex};
+    background-color: ${(props) => props.theme.base.hex};
+    border: 1px solid ${(props) => props.theme.subtext1.hex};
+    cursor: pointer;
+  }
+
+  button:hover {
+    filter: brightness(120%);
+  }
 `;
 
 const Content = styled.div`
@@ -72,6 +107,7 @@ const Content = styled.div`
   svg {
     color: ${(props) => props.theme.text.hex};
     font-size: 2.4rem;
+    cursor: pointer;
   }
 `;
 
@@ -91,6 +127,7 @@ const Footer = styled.footer`
       margin: 0 10px;
       font-size: 1.2rem;
       font-weight: bold;
+      cursor: pointer;
     }
   }
 `;

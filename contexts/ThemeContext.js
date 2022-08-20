@@ -34,7 +34,7 @@ function reducer(state, action) {
 function ThemesProvider({ children }) {
   //const [theme, setTheme] = useState(frappe);
 
-  const [theme, dispatch] = useReducer(reducer, frappe);
+  const [theme, dispatch] = useReducer(reducer, latte);
 
   function handleChange(type) {
     dispatch({ type });
@@ -65,7 +65,7 @@ a {
   text-decoration: inherit; /* no underline */
 }
 
-h1,h2,h3, h4,h5, h6 {
+h1,h2,h3, h4,h5, h6, p {
     color: ${(props) => props.theme.text.hex};
 }
 
