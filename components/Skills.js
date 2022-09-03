@@ -7,7 +7,7 @@ import { SiTypescript, SiCss3, SiHtml5, SiMongodb, SiPostgresql, SiAmazonaws, Si
 export default function Skills () {
 
 
-    const [tech, setTech] = useState('click above');
+    const [tech, setTech] = useState('vem de clique');
 
     function handleTech (text) {
         setTech(text);
