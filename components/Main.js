@@ -1,83 +1,68 @@
 import styled from 'styled-components';
 import { FiGithub, FiYoutube, FiLinkedin, FiMail } from 'react-icons/fi';
-import { useThemes } from '../contexts/ThemeContext';
 import Profile from './Profile';
 
+
 export default function Main() {
-  const { handleChange } = useThemes();
+  
 
   function handleClick(link) {
     window.open(link);
   }
   return (
     <>
-      <Header>
+      <Wrapper id="about">
         <Profile />
-        <h1>lesimoes</h1>
-        <h2>
-          Engenheiro de Software, Professor e Mestre em Ciência da Computação
-        </h2>
-        <p>
-          Liderando a equipe <strong>devteam</strong> com devs apaixonados por
-          tecnologia. Damos vida a sua ideia com entregas rápidas e tecnologias
-          consolidadas como <strong>nodejs</strong>, <strong>reactjs</strong>,{' '}
-          <strong>aws</strong>, <strong>mongodb</strong>,{' '}
-          <strong>firebase</strong>, <strong>postgresql</strong>.
-        </p>
-        <button onClick={() => handleClick('mailto:lesimoes0@gmail.com')}>
-          Entre em contato
-        </button>
-      </Header>
-      <Content>
-        <FiLinkedin
-          onClick={() => handleClick('https://www.linkedin.com/in/lesimoess/')}
-        />
-        <FiYoutube
-          onClick={() =>
-            handleClick('https://www.youtube.com/c/lesimoes?sub_confirmation=1')
-          }
-        />
-        <FiGithub onClick={() => handleClick('https://github.com/lesimoes')} />
-        <FiMail onClick={() => handleClick('mailto:lesimoes0@gmail.com')} />
-      </Content>
-      <Footer>
-        <section>
-          <span onClick={() => handleChange('frappe')}>frappe</span>
-          <span onClick={() => handleChange('latte')}>latte</span>
-          <span onClick={() => handleChange('macchiato')}>macchiato</span>
-          <span onClick={() => handleChange('mocha')}>mocha</span>
+          <section>
+            <h1>Um pouco sobre mim...</h1>
+            <p>
+              <strong>E ai, belezinha?</strong> Meu nome é Leandro mas você pode me chamar de <strong>Le</strong>, sou programador, professor e mestre em ciência da computação.
+            </p>
+            <p>
+              Tenho trabalhado nos últimos 6 anos como programador ou tech lead remoto para empresas de São Paulo, em projetos para grandes empresas nacionais. Como tenho trabalhado no últimos 4 anos em universidades e bootcamps ensinando centenas de pessoas. 
+            </p>
+            <p>
+              Você pode conferir meu conteúdo no Linkedin e Youtube onde falo sobre conceitos avançados de Reactjs.
+            </p>
+            <Content>
+              <FiLinkedin
+                onClick={() => handleClick('https://www.linkedin.com/in/lesimoess/')}
+              />
+              <FiYoutube
+                onClick={() =>
+                  handleClick('https://www.youtube.com/c/lesimoes?sub_confirmation=1')
+                }
+              />
+              <FiGithub onClick={() => handleClick('https://github.com/lesimoes')} />
+              <FiMail onClick={() => handleClick('mailto:lesimoes0@gmail.com')} />
+            </Content>
         </section>
-      </Footer>
+
+      </Wrapper>
+      
+
     </>
   );
 }
 
-const Header = styled.header`
+const Wrapper = styled.header`
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 100px;
+  padding: 2% 4%;
 
-  h1 {
-    color: ${(props) => props.theme.mauve.hex};
-    font-weight: bold;
-    font-size: 2rem;
+
+  section {
+    padding: 2% 4%;
+
+
+    p {
+      font-size: 1.6rem;
+      line-height: 2.5rem;
+      font-weight: 400;
+    }
   }
-
-  h2 {
-    color: ${(props) => props.theme.subtext1.hex};
-    font-size: 1rem;
-    padding: 0 20px;
-    text-align: center;
-  }
-
-  p {
-    font-size: 28px;
-    text-align: center;
-    padding: 2% 10%;
-  }
-
   strong {
     color: ${(props) => props.theme.pink.hex};
   }
@@ -96,38 +81,28 @@ const Header = styled.header`
   button:hover {
     filter: brightness(120%);
   }
+
+  @media screen and (max-width: 1024px) { 
+      flex-direction: column;
+      padding: 2% 2%;
+    }
 `;
 
 const Content = styled.div`
   display: flex;
   width: 100%;
-  height: 30vh;
+  height: 8vh;
   justify-content: space-around;
   align-items: center;
+  
   svg {
     color: ${(props) => props.theme.text.hex};
-    font-size: 2.4rem;
+    font-size: 2rem;
     cursor: pointer;
   }
-`;
 
-const Footer = styled.footer`
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  height: 60px;
-
-  section {
-    span {
-      color: ${(props) => props.theme.pink.hex};
-      margin: 0 10px;
-      font-size: 1.2rem;
-      font-weight: bold;
-      cursor: pointer;
-    }
+  svg:hover {
+    color: ${(props) => props.theme.pink.hex};
   }
 `;
+

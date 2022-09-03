@@ -32,9 +32,8 @@ function reducer(state, action) {
 }
 
 function ThemesProvider({ children }) {
-  //const [theme, setTheme] = useState(frappe);
 
-  const [theme, dispatch] = useReducer(reducer, latte);
+  const [theme, dispatch] = useReducer(reducer, macchiato);
 
   function handleChange(type) {
     dispatch({ type });
@@ -54,6 +53,10 @@ const Global = createGlobalStyle`
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 } 
+ html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+ }
  
 body {
   background-color: ${(props) => props.theme.crust.hex} ;

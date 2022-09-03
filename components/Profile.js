@@ -11,19 +11,32 @@ export default function Profile({ image }) {
 
 const ProfileAvatar = styled.div`
   background-color: ${(props) => props.theme.mauve.hex};
-  border-radius: 50%;
+  border-radius: 10%;
   padding: 2px;
   display: flex;
-  justify-content: center;
   align-items: center;
   box-shadow: 0 10px 18px 0 ${(props) => `${props.theme.overlay2.hex}30`};
-  width: 160px;
-  height: 160px;
+  width: 424px;
+  height: 424px;
 
   img {
-    width: 156px;
-    height: 156px;
-    border-radius: 50%;
+    width: 420px;
+    height: 420px;
+    border-radius: 10%;
     object-fit: cover;
+  }
+
+  @media screen and (max-width: 1024px) { 
+ 
+    width: 324px;
+    height: 324px;
+    
+    img {
+      width: 320px;
+      height: 320px;
+      border-radius: 10%;
+      object-fit: cover;
+    }
+     
   }
 `;
