@@ -1,5 +1,7 @@
-import { createContext, useContext, useState, useReducer } from 'react';
+import { createContext, useContext, useLayoutEffect, useReducer } from 'react';
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
+import { useIsomorphicLayout } from '../hooks/useIsomorphicLayout';
+
 import palettes from '../styles/catppucin';
 
 const {
@@ -32,10 +34,17 @@ function reducer(state, action) {
 }
 
 function ThemesProvider({ children }) {
-
   const [theme, dispatch] = useReducer(reducer, macchiato);
 
+  useIsomorphicLayout(() => {
+    const theme = localStorage.getItem('lesimoes.com');
+    if (theme) {
+      handleChange(theme);
+    }
+  }, []);
+
   function handleChange(type) {
+    localStorage.setItem('lesimoes.com', type);
     dispatch({ type });
   }
   return (

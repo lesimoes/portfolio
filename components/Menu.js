@@ -1,23 +1,27 @@
 import styled from 'styled-components';
-import { useState } from 'react';
-import { FiCoffee } from 'react-icons/fi';
-import { useThemes } from '../contexts/ThemeContext';
-import Link from 'next/link'
+import Link from 'next/link';
 
-export default function Menu() {
-  const { handleChange } = useThemes();
-
+export default function Menu({ title, links }) {
   return (
     <Wrapper>
       <h2>lesimoes</h2>
       <section>
         <ul>
-          <Link href="#about"><li>sobre</li></Link>
-          <Link href="#skills"><li>skills</li></Link>
-          <Link href="#hire"><li>freelance</li></Link>
+          <Link href="/#about">
+            <li>sobre</li>
+          </Link>
+          <Link href="/#skills">
+            <li>skills</li>
+          </Link>
+          <Link href="/#hire">
+            <li>freelance</li>
+          </Link>
+          <Link href="/">
+            <li>blog</li>
+          </Link>
         </ul>
       </section>
-
+      {links}
     </Wrapper>
   );
 }
@@ -34,8 +38,10 @@ const Wrapper = styled.header`
   background-color: ${(props) => props.theme.crust.hex};
   justify-content: space-between;
   height: 80px;
+  flex: 1;
 
   h2 {
+    color: ${(props) => props.theme.mauve.hex};
     font-size: 1.4rem;
     cursor: pointer;
     transition: all linear 300ms;
@@ -44,7 +50,6 @@ const Wrapper = styled.header`
   h2:hover {
     color: ${(props) => props.theme.mauve.hex};
   }
-
   ul {
     list-style: none;
     display: flex;
@@ -74,19 +79,17 @@ const Wrapper = styled.header`
     padding: 0 2%;
   }
 
-@media screen and (max-width: 1024px) { 
- h2 {
-  font-size: 1.3rem;
- }
+  @media screen and (max-width: 1024px) {
+    h2 {
+      font-size: 1.3rem;
+    }
 
- ul {
-    gap: 1%;
- }
+    ul {
+      gap: 1%;
+    }
 
- li {
-  font-size: 1rem;
- }
-  
-}
-
+    li {
+      font-size: 1rem;
+    }
+  }
 `;
