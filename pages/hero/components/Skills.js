@@ -7,7 +7,7 @@ import { SiTypescript, SiCss3, SiHtml5, SiMongodb, SiPostgresql, SiAmazonaws, Si
 export default function Skills () {
 
 
-    const [tech, setTech] = useState('vem de clique');
+    const [tech, setTech] = useState('pick a icon');
 
     function handleTech (text) {
         setTech(text);
@@ -15,7 +15,7 @@ export default function Skills () {
 
     return (
         <Wrapper id="skills">
-            <h1>Tecnologias & Ferramantas</h1>
+            <h1>Tech and Tools</h1>
             <Content>
               <GrReactjs onClick={() => handleTech('React - Frontend')} />
               <TbBrandReactNative  onClick={() => handleTech('React Native - Mobile')}/>
@@ -31,7 +31,7 @@ export default function Skills () {
               <SiDocker onClick={() => handleTech('Docker - Infra/Cloud')}  />
               <SiFirebase onClick={() => handleTech('Firebase - Cloud')}  />
             </Content>
-            <h3>{tech}</h3>
+            <span>{tech}</span>
         </Wrapper>
     )
 }
@@ -44,8 +44,9 @@ const Wrapper = styled.div`
   padding: 2% 4%;
   margin: 100px 0;
   
-  h3 {
-    font-size: 2.6rem;
+  span {
+    font-size: 1.6rem;
+    font-weight: 500;
     color: ${(props) => props.theme.pink.hex};
     text-align: center;
   }
@@ -56,8 +57,9 @@ const Wrapper = styled.div`
     font-size: 1.6rem;
   }
 
-  h3 {
+  span {
     font-size: 1.4rem;
+    font-weight: 500;
     text-align: center;
   }
 
@@ -66,7 +68,6 @@ const Wrapper = styled.div`
 
 const Content = styled.div`
   display: flex;
-  width: 40%;
   height: 20vh;
   justify-content: space-around;
   align-items: center;
@@ -77,7 +78,7 @@ const Content = styled.div`
     color: ${(props) => props.theme.text.hex};
     font-size: 3.2rem;
     cursor: pointer;
-    margin: 4px 6px;
+    margin: 4px 16px;
   }
 
   svg:hover {
@@ -86,6 +87,9 @@ const Content = styled.div`
 
   @media screen and (max-width: 1024px) { 
     height: 60vh;
-    width: 60%;
+
+    svg {
+      font-size: 2.2rem;
+    }
   }
 `;

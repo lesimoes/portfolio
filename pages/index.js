@@ -1,16 +1,5 @@
-import Main from '../components/Main';
-import Skills from '../components/Skills';
-import Hire from '../components/Hire';
-import MainLayout from '../layouts/MainLayout';
+import Hero from './hero/index';
 
 export default function Home() {
-  return (
-    <>
-      <MainLayout>
-        <Main />
-        <Skills />
-        <Hire />
-      </MainLayout>
-    </>
-  );
+  return <Hero />;
 }

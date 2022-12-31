@@ -8,16 +8,13 @@ export default function Menu({ title, links }) {
       <section>
         <ul>
           <Link href="/#about">
-            <li>sobre</li>
+            <li>about</li>
           </Link>
           <Link href="/#skills">
             <li>skills</li>
           </Link>
           <Link href="/#hire">
-            <li>freelance</li>
-          </Link>
-          <Link href="/">
-            <li>blog</li>
+            <li>projects</li>
           </Link>
         </ul>
       </section>
@@ -34,21 +31,21 @@ const Wrapper = styled.header`
   width: 100%;
   top: 0;
   left: 0;
-  box-shadow: 1px 1px 2px ${(props) => props.theme.overlay2.hex};
   background-color: ${(props) => props.theme.crust.hex};
   justify-content: space-between;
   height: 80px;
   flex: 1;
+  box-shadow: 0 0 2px 0 rgb(145 158 171 / 20%), 0 12px 24px -4px rgb(145 158 171 / 12%);
 
   h2 {
     color: ${(props) => props.theme.mauve.hex};
-    font-size: 1.4rem;
+    font-size: 1rem;
     cursor: pointer;
-    transition: all linear 300ms;
+    transition: all linear 200ms;
   }
 
   h2:hover {
-    color: ${(props) => props.theme.mauve.hex};
+    color: ${(props) => props.theme.overlay2.hex};
   }
   ul {
     list-style: none;
@@ -57,14 +54,15 @@ const Wrapper = styled.header`
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-    gap: 8%;
+    gap: 2%;
   }
+
   li {
     padding: 4px 8px;
     color: ${(props) => props.theme.mauve.hex};
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-weight: 500;
     cursor: pointer;
+    transition: all 200ms linear;
   }
 
   li:hover {
@@ -81,7 +79,7 @@ const Wrapper = styled.header`
 
   @media screen and (max-width: 1024px) {
     h2 {
-      font-size: 1.3rem;
+      font-size: 1.1rem;
     }
 
     ul {
@@ -89,7 +87,7 @@ const Wrapper = styled.header`
     }
 
     li {
-      font-size: 1rem;
+      font-size: 0.9rem;
     }
   }
 `;

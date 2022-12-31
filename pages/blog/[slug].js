@@ -1,17 +1,22 @@
 import { serialize } from 'next-mdx-remote/serialize';
 import { MDXRemote } from 'next-mdx-remote';
 import { MDXProvider } from '@mdx-js/react';
+
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import MainLayout from '../../layouts/MainLayout';
 import { Title, Warning } from '../../components/Styles';
+import SandBox from '../../components/SandBox';
+import AlertBox from '../../components/AlertBox';
 
 const components = {
   SyntaxHighlighter,
   Title,
   Warning,
+  SandBox,
+  AlertBox,
 };
 
 const PostPage = ({ frontMatter: { title, date }, mdxSource }) => {
