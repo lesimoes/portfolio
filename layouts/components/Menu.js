@@ -13,8 +13,11 @@ export default function Menu({ title, links }) {
           <Link href="/#skills">
             <li>skills</li>
           </Link>
-          <Link href="/#hire">
+          <Link href="/#projects">
             <li>projects</li>
+          </Link>
+          <Link href="/#hire">
+            <li>hire me</li>
           </Link>
         </ul>
       </section>
@@ -74,16 +77,12 @@ const Wrapper = styled.header`
 
   section {
     flex: 1;
-    padding: 0 2%;
+    padding: 0 1%;
   }
 
   @media screen and (max-width: 1024px) {
     h2 {
-      font-size: 1.1rem;
-    }
-
-    ul {
-      gap: 1%;
+      display: none;
     }
 
     li {

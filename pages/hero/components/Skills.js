@@ -7,7 +7,7 @@ import { SiTypescript, SiCss3, SiHtml5, SiMongodb, SiPostgresql, SiAmazonaws, Si
 export default function Skills () {
 
 
-    const [tech, setTech] = useState('pick a icon');
+    const [tech, setTech] = useState('pick one');
 
     function handleTech (text) {
         setTech(text);

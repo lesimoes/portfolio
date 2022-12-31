@@ -13,13 +13,15 @@ export default function Main() {
         <section>
           <h1>A little bit about me</h1>
           <p>
-            <strong>Hello there 👋!</strong> I'm Leandro, but you can call me just <strong>Le</strong>, full stack web developer and teacher. I'm specialize in building valuable software products for a thousands of users, focusing on deliver the most valuable software for users and developers.
+            <strong>Hello there 👋!</strong> I'm Leandro, but you can call me just <strong>Le</strong>, full stack web developer. I'm specialize in building valuable software products for a thousands of users.
           </p>
           <p>
-            I have been work as web developer and tech lead for the last decade in start ups, building a low-code automation tool from scrath, and enterprise projects, building a scalable web service with milions requests per day. 
+            I have been work as <strong>web developer and tech lead</strong> for the last decade in start ups and worked on a lot of projects from scratch to launch, some of then with millions requests per day.</p>
+          <p>
+            I have a <strong>master degree (MsC)</strong> in computer science and worked for 5 years as assistant professor and published some papers about software engineering.
           </p>
           <p>
-            As a teacher I have been teaching in bootcamps and universities as assistant professor, focusing on software engineer and web development disciplines. I have degree in Information Systems and Master Degree in Computer Science.
+            If you speak Portuguese you can see me on youtube when I talk about <strong>React advanced concepts.</strong>
           </p>
           <Content>
             <FiLinkedin

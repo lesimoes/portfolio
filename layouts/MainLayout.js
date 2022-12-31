@@ -8,9 +8,11 @@ export default function MainLayout({ children, title }) {
       <Head>
         <title>{title ? title : 'lesimoes'}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        
         <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-            <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300;400;500;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300;400;500;700&display=swap" rel="stylesheet" />
+        
 
       </Head>
       <Menu />
@@ -25,5 +27,5 @@ const Wrapper = styled.main`
   margin-bottom: 60px;
   display: flex;
   flex-direction: column;
-
+  padding: 50px 50px;
 `;
